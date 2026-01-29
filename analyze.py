@@ -77,9 +77,8 @@ if __name__ == "__main__":
         exit()
     for i in range(inputIndex):
         processAction(Step[i])
-        for j in range(4):
-            print("北:" + strCard(sorted(Player[getPlayerFromLoc('N')])) + '\n')
-            print("東:" + strCard(sorted(Player[getPlayerFromLoc('E')])) + '\n')
-            print("南:" + strCard(sorted(Player[getPlayerFromLoc('S')])) + '\n')
-            print("西:" + strCard(sorted(Player[getPlayerFromLoc('W')])) + '\n')
-            print("池:" + strCard(abandonList))
+        print("北:" + strCard(sorted(Player[getPlayerFromLoc('N')])) + '\n')
+        print("東:" + strCard(sorted(Player[getPlayerFromLoc('E')])) + '\n')
+        print("南:" + strCard(sorted(Player[getPlayerFromLoc('S')])) + '\n')
+        print("西:" + strCard(sorted(Player[getPlayerFromLoc('W')])) + '\n')
+        print("池:" + strCard(abandonList))
